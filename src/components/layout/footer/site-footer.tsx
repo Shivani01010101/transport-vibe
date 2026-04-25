@@ -63,8 +63,8 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-neutral-200 bg-[#fafafa]">
       <div className="mx-auto flex w-full max-w-[1366px] flex-col gap-10 px-4 pb-5 pt-12 sm:px-8">
-        {/* Newsletter */}
-        <div className="relative h-[240px] w-full overflow-hidden rounded-lg bg-brand-deep">
+        {/* Newsletter — height follows content on small screens (fixed h was clipping on mobile) */}
+        <div className="relative isolate w-full overflow-hidden rounded-lg bg-brand-deep">
           <Image
             src={figmaAssets.newsletterBg}
             alt=""
@@ -79,21 +79,21 @@ export function SiteFooter() {
                 "linear-gradient(239deg, rgba(19,81,40,0.8) 8%, rgba(19,81,40,0) 20%), linear-gradient(109deg, rgb(19,81,40) 44%, rgba(19,81,40,0) 71%)",
             }}
           />
-          <div className="relative z-[1] flex h-full flex-col justify-center gap-5 px-6 py-6 sm:px-10">
-            <div className="max-w-[1126px] space-y-1.5 text-text-white">
-              <h2 className="font-display text-display-h4 font-semibold leading-[1.2]">
+          <div className="relative z-1 flex flex-col gap-4 px-4 py-8 sm:gap-5 sm:px-8 sm:py-10 lg:min-h-[240px] lg:justify-center lg:py-12">
+            <div className="max-w-[1126px] space-y-2 text-text-white sm:space-y-1.5">
+              <h2 className="font-display text-[1.375rem] font-semibold leading-snug tracking-tight sm:text-2xl sm:leading-tight lg:text-display-h4 lg:leading-[1.2]">
                 Get Exclusive Deals And Shipping Tips
               </h2>
-              <p className="max-w-xl text-body-md leading-[1.4]">
+              <p className="max-w-xl text-body-sm leading-[1.45] sm:text-body-md sm:leading-[1.4]">
                 Subscribe to our newsletter to get exclusive deal and tips for your next shipping
               </p>
             </div>
-            <div className="flex w-full max-w-full flex-col gap-4 lg:flex-row lg:items-end">
-              <div className="grid flex-1 gap-4 sm:grid-cols-3">
+            <div className="flex w-full max-w-full flex-col gap-3 sm:gap-4 lg:flex-row lg:items-end lg:gap-4">
+              <div className="grid w-full flex-1 grid-cols-1 gap-3 sm:grid-cols-3 sm:gap-4">
                 {(["Your Name", "Your Phone", "Your Email"] as const).map((ph) => (
                   <div
                     key={ph}
-                    className="flex h-12 items-center rounded border border-neutral-200 bg-neutral-0 px-3 text-body-sm text-text-light-gray"
+                    className="flex h-12 min-h-12 w-full min-w-0 items-center rounded border border-neutral-200 bg-neutral-0 px-3 text-body-sm text-text-light-gray"
                   >
                     {ph}
                   </div>
@@ -101,13 +101,13 @@ export function SiteFooter() {
               </div>
               <Link
                 href="#"
-                className="inline-flex h-12 shrink-0 items-center justify-center rounded-sm bg-primary-500 px-7 text-display-caption font-bold uppercase text-text-white"
+                className="inline-flex h-12 w-full shrink-0 items-center justify-center rounded-sm bg-primary-500 px-7 text-display-caption font-bold uppercase text-text-white sm:w-auto lg:w-auto"
               >
                 Subscribe
               </Link>
             </div>
-            <p className="text-body-md italic leading-[1.4] text-text-white/80">
-              No spam, unscubscribe anytime
+            <p className="text-body-sm italic leading-[1.4] text-text-white/80 sm:text-body-md">
+              No spam, unsubscribe anytime
             </p>
           </div>
         </div>
