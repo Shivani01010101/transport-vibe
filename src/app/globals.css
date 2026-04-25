@@ -6,6 +6,8 @@
  */
 :root {
   --header-offset: 131px;
+  /** Sticky sidebars: `top` = header height + air gap so content does not meet the header edge. */
+  --cd-header-sticky-inset: calc(var(--header-offset) + 12px);
 
   /* Figma-only until next sync */
   --cd-brand-deep: #135128;
