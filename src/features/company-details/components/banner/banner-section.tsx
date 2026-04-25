@@ -15,7 +15,7 @@ const HERO_GRADIENT =
   "linear-gradient(82.84deg, #135128 19.12%, rgba(19, 81, 40, 0.7) 67.87%)";
 
 /** Same frosted band for top disclaimer and bottom stats (matches design). */
-const BANNER_GLASS_BAND = "bg-[#FFFFFF4D] backdrop-blur-[4px]";
+const BANNER_GLASS_BAND = "bg-[#12522885] backdrop-blur-[4px]";
 
 const HERO_FRAME_MIN_H = 385;
 const HERO_STATS_H = 88;
@@ -289,9 +289,7 @@ export function BannerSection({ banner }: BannerSectionProps) {
         {/* Stats — same glass band as disclaimer; grid aligned to content max width */}
         <div
           className={cn(
-            "w-full shrink-0 border-t border-[#FAFAFA3D] text-white",
-            BANNER_GLASS_BAND,
-            "min-h-[76px] lg:h-[var(--hero-stats-h)] lg:min-h-[var(--hero-stats-h)]",
+            "w-full shrink-0 border-t border-[#FAFAFA3D] text-white bg-[#135128] min-h-[76px] lg:h-[var(--hero-stats-h)] lg:min-h-[var(--hero-stats-h)]",
           )}
           style={{ ["--hero-stats-h" as string]: `${HERO_STATS_H}px` }}
         >
