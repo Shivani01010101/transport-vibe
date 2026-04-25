@@ -44,8 +44,8 @@ export default async function CompanyDetailsPage() {
         </div>
       </CompanyDetailsLayout>
 
-      <NewsletterSection data={data.newsletter} />
-      <DisclaimerSection data={data.disclaimer} />
+      {/* <NewsletterSection data={data.newsletter} /> */}
+      {/* <DisclaimerSection data={data.disclaimer} /> */}
     </>
   );
 }
