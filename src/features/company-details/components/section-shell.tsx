@@ -23,9 +23,13 @@ export function SectionShell({
   id,
   title,
   description,
+  leadOutsideCard,
   children,
   className,
   contentClassName,
+  headerEnd,
+  headerAccessory,
+  headerAside,
 }: SectionShellProps) {
   return (
     <section
