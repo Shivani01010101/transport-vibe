@@ -47,50 +47,90 @@
   },
   "score": {
     "title": "Trust Score Breakdown",
-    "overall": 92,
+    "aiVerdict": {
+      "title": "AI Verdict",
+      "analysisLabel": "Match Analysis",
+      "updatedLabel": "Updated Jan 2026",
+      "reviewCountLabel": "13,700+ reviews",
+      "segments": [
+        {
+          "tone": "neutral",
+          "text": "Mercury Auto Transport is a strong fit for "
+        },
+        {
+          "tone": "positive",
+          "text": "cross-country shipments"
+        },
+        {
+          "tone": "neutral",
+          "text": " and "
+        },
+        {
+          "tone": "positive",
+          "text": "budget-conscious customers"
+        },
+        {
+          "tone": "neutral",
+          "text": " who value clear quotes and metro dispatch speed. The broker performs reliably on major corridors, but "
+        },
+        {
+          "tone": "caution",
+          "text": "may not be the best choice for frequent mid-transit updates or rural pickups."
+        }
+      ]
+    },
+    "overall": 98,
     "maximum": 100,
-    "summary": "Strong on quote accuracy, dispatch speed, and claim handling transparency.",
     "methodologyHref": "#",
+    "overallBandLabel": "Highly Trusted",
     "pillars": [
       {
-        "id": "pricing",
-        "title": "Pricing Accuracy",
-        "strength": "strong",
-        "score": 94,
-        "summary": "Price-sensitive major corridors",
-        "detail": "93% quote accuracy with dense carrier availability on CA, FL, TX, and NY lanes."
+        "id": "reputation",
+        "title": "Reputation",
+        "weightPercent": 20,
+        "reviewSampleLabel": "1,800+ reviews",
+        "score": 96,
+        "barTone": "green"
       },
       {
-        "id": "dispatch",
-        "title": "Dispatch Speed",
-        "strength": "strong",
-        "score": 91,
-        "summary": "Fast assignment in metro markets",
-        "detail": "Most dispatches lock in within 24-48 hours when lead time is above one week."
+        "id": "pricing-accuracy",
+        "title": "Pricing accuracy",
+        "weightPercent": 25,
+        "reviewSampleLabel": "2,300+ reviews",
+        "score": 82,
+        "barTone": "green"
       },
       {
-        "id": "vehicle-care",
-        "title": "Vehicle Care",
-        "strength": "good",
+        "id": "delivery-timing",
+        "title": "Delivery timing",
+        "weightPercent": 15,
+        "reviewSampleLabel": "2,100+ reviews",
+        "score": 74,
+        "barTone": "blue"
+      },
+      {
+        "id": "communication",
+        "title": "Communication",
+        "weightPercent": 20,
+        "reviewSampleLabel": "1,900+ reviews",
+        "score": 89,
+        "barTone": "green"
+      },
+      {
+        "id": "pickup-timing",
+        "title": "Pickup timing",
+        "weightPercent": 10,
+        "reviewSampleLabel": "1,600+ reviews",
         "score": 78,
-        "summary": "Better with enclosed specialists",
-        "detail": "Condition score remains high, but enclosed luxury transport is stronger with niche carriers."
+        "barTone": "blue"
       },
       {
-        "id": "rural-pickup",
-        "title": "Rural Pickup",
-        "strength": "weaker",
-        "score": 58,
-        "summary": "Limited off-corridor network depth",
-        "detail": "Remote pickups can increase cost and add schedule variance when highways are far."
-      },
-      {
-        "id": "updates",
-        "title": "Transit Updates",
-        "strength": "weaker",
-        "score": 60,
-        "summary": "Communication can lag mid-route",
-        "detail": "A subset of reviews cites update delays during long-haul transit windows."
+        "id": "issue-resolution",
+        "title": "Issue resolution",
+        "weightPercent": 10,
+        "reviewSampleLabel": "420+ reviews",
+        "score": 54,
+        "barTone": "orange"
       }
     ]
   },
@@ -594,7 +634,7 @@
       "companyName": "Rimberio Auto Transport",
       "rating": 4.8,
       "reviewCount": 2100,
-      "trustScore": 96,
+      "trustScore": 98,
       "trustBadgeLabel": "Highly Trusted",
       "getQuoteLabel": "GET QUOTE FROM MERCURY",
       "compareWithOtherLabel": "COMPARE WITH OTHER",
